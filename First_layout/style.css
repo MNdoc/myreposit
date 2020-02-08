@@ -1,0 +1,265 @@
+:root {
+	box-sizing: border-box;
+	font-size: calc(1vw + 0.57em);
+};
+body {
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+header {
+	padding: 0.5em 1em;
+}
+.title {
+	
+}
+.title > h1 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	margin: 0.25em 0;
+}
+.slogan {
+	margin: 0;
+	font-size: .8em;
+	color: grey;
+}
+.menu {
+	position: relative;
+}
+.b1 {
+	position: absolute;
+	top: -1.05em;
+	right: 0.1em;
+	border: 0;
+	background-color: transparent;
+	width: 1em;
+	height: 1em;
+	font-size: 4em;
+	line-height: 0.1em;
+	text-indent: 0.2em;
+	overflow: hidden;
+	user-select: none;
+	z-index: 2;
+}
+.b1:after {
+	position: absolute;
+	top: 0.47em;
+	left: 0.01em;
+	display: block;
+	content: "\2261";
+	user-select: none;
+	cursor: pointer;
+}
+.menu-drop {
+	position: absolute;
+	top: -1em;
+	max-width: 100%;
+	width: 100vw;
+	font-size: 2em;
+	z-index: 1;
+}
+ul {
+	display: none;
+	padding: 0;
+}
+li {
+	list-style-type: none;
+	text-indent: .5em;
+}
+li + li {
+border-top: solid 0.05em white;
+}
+
+.nav-menu {
+	background-color: black;
+}
+.nav-menu a {
+	color: white;
+	text-decoration: none;
+}
+.nav-menu a:hover {
+	text-decoration: underline white;
+}
+.hero {
+	padding: 3em 1.5em;
+	text-align: center;
+	background-image: url(img/coffee-beans-small.jpg);
+	background-size: 100%;
+	color: white;
+}
+#main {
+	margin-top: 0.3em;
+	padding: 1.2em;
+}
+.row {
+
+} 
+.column > h2 {
+	text-transform: uppercase;
+	font-size: 1.3em;
+	padding-left: inherit;
+	padding-right: inherit;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.column a {
+	text-decoration: none;
+}
+.column a:hover {
+	text-decoration: underline;
+}
+@media (max-width: 412px) {
+	.title > h1 {
+		font-size: 1.4rem;
+	}
+	.menu-drop {
+		font-size: 1.5rem;
+	}
+	.slogan {
+		font-size: 0.7rem;
+	}
+	.b1 {
+		font-size: 3.5rem;
+	}
+	.hero {
+		font-size: 0.8rem;
+	}
+	#main {
+	margin-top: 0.2rem;
+	padding: 1.2rem;
+	}
+	.column > h2 {
+		padding-top: 0.4rem;
+		padding-bottom: 0.4rem;
+		font-size: 1.2rem;
+	}
+	.column > p {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 321px) {
+	.title > h1 {
+		font-size: 1.2em;
+	}
+	.menu-drop {
+		font-size: 1.3rem;
+	}
+	.b1 {
+		font-size: 3.3rem;
+	}
+	.hero {
+		font-size: 0.7rem;
+	}
+	#main {
+	margin-top: 0.2em;
+	padding: 1rem;
+	}
+	.column > h2 {
+		padding-top: 0.3rem;
+		padding-bottom: 0.3rem;
+		font-size: 1.1rem;
+	}
+	.column > p {
+		font-size: 0.9rem;
+	}
+}
+@media (max-width: 270px) {
+	.title > h1 {
+		font-size: 1rem;
+	}
+	.menu-drop {
+		font-size: 1.1rem;
+	}
+	.b1 {
+		font-size: 3rem;
+	}
+	.hero {
+		font-size: 0.6rem;
+	}
+	#main {
+	margin-top: 0.1em;
+	}
+	.column > h2 {
+		padding-top: 0.1rem;
+		padding-bottom: 0.1rem;
+		font-size: 1rem;
+	}
+	.column > p {
+		font-size: 0.8rem;
+	}
+}
+@media (min-width: 700px) {
+	:root {
+		font-size: 1.3em;
+	}
+	.title > h1 {
+		font-size: 2rem;
+	}
+	.slogan {
+		font-size: 1.1rem;
+	}
+	
+	.b1 {
+		display: none;
+	}
+	ul {
+		display: block;
+		position: static;
+		}
+	.nav-menu {
+		margin-top: 1.8rem;
+		display: flex;
+		font-size: 1.1rem;
+		padding: .2rem 1rem;
+		text-align: center;
+		}
+	.nav-menu li {
+		flex: 1;
+	}	
+	li + li {
+		border-top: 0;
+		}
+	.hero {
+		font-size: 1.3rem;
+		background-image: url(img/coffee-beans-medium.jpg);
+	}
+	.row {
+		display: flex;
+		margin-left: -.75em;
+		margin-right: -.75em;
+	}
+	.column {
+		flex: 1;
+		margin-left: 0.75em;
+		margin-right: 0.75em;
+	}
+}
+@media (min-width: 2500px) {
+	:root {
+		font-size: 1.4em;
+	}
+	.title > h1 {
+		font-size: 2.5rem;
+	}
+	.slogan {
+		font-size: 1.4rem;
+	}
+	.nav-menu {
+		margin-top: 2.1rem;
+		display: flex;
+		font-size: 1.4rem;
+		padding: .4rem 1.2rem;
+		text-align: center;
+		}
+	.hero {
+		font-size: 2rem;
+		padding: 4em 2em;
+		background-image: url(img/coffee-beans.jpg);
+	}
+	.column > h2 {
+		font-size: 1.7rem;
+	}
+	.column > p {
+		font-size: 1.4rem;
+	}
+}
