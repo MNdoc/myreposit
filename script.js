@@ -51,18 +51,40 @@
 //request for current USD rate
 
 		let cur = 'http://www.nbrb.by/API/ExRates/Rates?Periodicity=0';
-		let curUsd;
+		let curUsd,
+			curEur,
+			curRub;
 
 			$.ajax({
 				url: cur,
 				cache: false,
 				success: function(html) {
 					let arr = html;
-					curUsd = arr[4].Cur_OfficialRate;
+					console.log(arr);
+					curUsd = (arr[4].Cur_OfficialRate);
+					curEur = (arr[5].Cur_OfficialRate);
+					curRub = +1 / (arr[16].Cur_OfficialRate);
+						
+					strUsd();
+					strEur();
+					strRub();
 					calculateUsd();
+					
 					}
 			});
-
+		
+		function strUsd() {
+		$('#dol').text('1 USD: ' + curUsd.toFixed(2)  + ' BYN');
+		}
+		
+		function strEur() {
+		$('#eur').text('1 EUR: ' + curEur.toFixed(2) + ' BYN');
+		}
+				
+		function strRub() {
+		$('#rub').text('1 RUB: ' + curRub.toFixed(2) + ' BYN');
+		}		
+		
 //function transfom price BYN to USD
 
 			function calculateUsd() {
@@ -88,12 +110,18 @@
 				$('.model-summary').delay(1000).fadeIn(1000);
 				
 			})
-
+		
+			
+	
+		
 // start page
 	calculatePrice();
 	camSpecs();
 	calculateUsd();
-				
+		strUsd();
+		strEur();
+		strRub();
+						
 	});	
 
 	
