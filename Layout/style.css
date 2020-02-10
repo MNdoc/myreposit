@@ -603,7 +603,7 @@ h6 {
 	right: 0%;
 }
 
-/********************** Team  ************************/
+/********************** Team section ************************/
 
 .section_team {
 	display: flex;
@@ -707,10 +707,150 @@ h6 {
 
 .grey_space.logos {
 	margin-top: 7rem;
+	margin-bottom: 0;
 }
 
 .inner_logo {
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+
 }
+/********************* work section **************/
+
+.section.work {
+	padding: 7rem 0 4rem 0;
+}
+
+.our_works {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	margin-top: 5rem;
+}
+
+.work_column {
+	flex: 1;
+}
+
+.work_item {
+	position: relative;
+	background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.work_item:hover .work_img {
+	opacity: 0.1;
+}
+
+.work_item:hover .work_info {
+	opacity: 1;
+}
+
+.work_img {
+	transition: opacity .2s linear;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.work_info {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	transform: translate3d(0, -50%, 0);
+	text-align: center;
+	color: #fff;
+	padding: 0 1rem;
+	opacity: 0;
+}
+
+.work_title {
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.work_text {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 0.9rem;
+}
+
+/*************** slider **********************/
+
+.grey_space.no_grey {
+	background: #fff;
+}
+
+.words_icon.new_slide {
+	position: absolute;
+	top: -1rem;
+	left: 4rem;
+}
+
+.section.clients_say {
+	width: 100%;
+	background: url(img/clients/1.jpg)
+}
+
+/***************** clients ***********************/
+
+.clients {
+	display: flex;
+	flex-wrap: wrap;
+}
+.clients_item {
+	width: 50%;
+	padding: 0rem 2.8rem 0rem 11rem;
+	margin: 2rem 0;
+	position: relative;
+}
+.clients_photo {
+	position: absolute;
+	top: 0;
+	left: 2.5rem;
+}
+.clients_name {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 0.4rem;
+}
+.clients_prof {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9rem;
+	font-style: italic;
+	font-weight: 300;
+}
+.clients_commit {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9rem;
+	color: #999;
+	position: relative;
+	padding-top: 2.3rem;
+}
+
+.clients_commit:before {
+	content: '';
+	display: block;
+	width: 4rem;
+	height: 0.2rem;
+	background-color: #f38181;
+	position: absolute;
+	top: 1rem;
+	left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
