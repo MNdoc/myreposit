@@ -12,185 +12,188 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<div class="header_inner">
-				<div class="head_logo">MoGo</div>
-				<nav class="nav">
-					<a class="nav_link active" href="#">ABOUT</a>
-					<a class="nav_link" href="#">SERVICE</a>
-					<a class="nav_link" href="#">WORK</a>
-					<a class="nav_link" href="#">BLOG</a>
-					<a class="nav_link" href="#">CONTACT</a>
+				<div class="head_logo" data-scroll="#intro">MoGo</div>
+				<nav class="nav" id="nav">
+					<a class="nav_link" href="#about" data-scroll="#about">ABOUT</a>
+					<a class="nav_link" href="#services" data-scroll="#services">SERVICE</a>
+					<a class="nav_link" href="#work" data-scroll="#work">WORK</a>
+					<a class="nav_link" href="#blog" data-scroll="#blog">BLOG</a>
+					<a class="nav_link" href="#contact" data-scroll="#contact">CONTACT</a>
 					<a class="nav_link" href="#">
 						<i class="fas fa-shopping-cart"></i>
 					</a>
 					<a class="nav_link" href="#">
 						<i class="fas fa-search"></i>
 					</a>
-
 				</nav>
+				<button class="nav-mobile" id="nav_mobile" type="button">
+					<span class="nav-mobile_item">Menu</span>
 			</div>
+			</button>
+		</div>
 		</div>
 
 	</header>
-
-	<div class="intro">
-		<div class="container">
-			<div class="intro_inner">
-				<h2 class="intro_hightitle">Creative Template</h2>
-				<h1 class="intro_title">Welcome to MoGo</h1>
-				<a class="btn_intro" href="#">Learn more</a>
-			</div>
-		</div>
-
-		<div class="intro_slide">
+	<div class="hidden_site">
+		<div class="intro" id="intro">
 			<div class="container">
-				<div class="slide_inner">
-					<div class="slide_item active">
-						<b>01</b>
-						<span class="slider_info"><a href="#">Intro</a></span>
-					</div>
-					<div class="slide_item">
-						<b>02</b>
-						<span class="slider_info"><a href="#">Work</a></span>
-					</div>
-					<div class="slide_item">
-						<b>03</b>
-						<span class="slider_info"><a href="#">About</a></span>
-					</div>
-					<div class="slide_item">
-					<b>04</b>
-					<span class="slider_info"><a href="#">Contacts</a></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<section class="section">
-		<div class="container">
-			<div class="section_header">
-				<h3 class="section_hightitle">What we do</h3>
-				<h2 class="section_title">Story about us</h2>
-				<div>
-					<p class="section_par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-
-			</div>
-			<div class="section_about">
-				<div class="about_item">
-					<div class="about_img">
-						<img src="./img/section_about/icon1.jpg" alt="1">
-					</div>
-					<div class="about_text">Super team</div>
-				</div>
-				<div class="about_item">
-					<div class="about_img">
-						<img src="./img/section_about/icon2.jpg" alt="1">
-					</div>
-					<div class="about_text">Super team</div>
-				</div>
-				<div class="about_item">
-					<div class="about_img">
-						<img src="./img/section_about/icon3.jpg" alt="1">
-					</div>
-					<div class="about_text">Super team</div>
+				<div class="intro_inner">
+					<h2 class="intro_hightitle">Creative Template</h2>
+					<h1 class="intro_title">Welcome to MoGo</h1>
+					<a class="btn_intro" href="#">Learn more</a>
 				</div>
 			</div>
 
-		</div>
-
-	</section>
-
-	<div class="digits">
-		<div class="container">
-			<div class="info">
-				<div class="dig_info">
-					<div class="count_info">43</div>
-					<div class="text_info">Web Design Projects</div>
-				</div>
-
-				<div class="dig_info">
-					<div class="count_info">123</div>
-					<div class="text_info">happy client</div>
-				</div>
-
-				<div class="dig_info">
-					<div class="count_info">15</div>
-					<div class="text_info">award winner</div>
-				</div>
-
-				<div class="dig_info">
-					<div class="count_info">99</div>
-					<div class="text_info">cup of coffee</div>
-				</div>
-
-				<div class="dig_info">
-					<div class="count_info">24</div>
-					<div class="text_info">members</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<section class="section">
-		<div class="container">
-			<div class="section_header serv">
-				<h3 class="section_hightitle">We work with</h3>
-				<h2 class="section_title">Amazing Services</h2>
-				<div class="main_services">
-				<div class="services">
-					<div class="services_item line">
-						<img class="serv_icon" src="img/service/1.png" alt="1">
-						<div class="serv_title">Photography</div>
-						<div class="serv_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-					</div>
-					<div class="services_item">
-						<img class="serv_icon" src="img/service/2.png" alt="1">
-						<div class="serv_title">Web Design</div>
-						<div class="serv_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-					</div>
-				</div>
-					
-					<div class="services">
-					<div class="services_item line">
-						<img class="serv_icon" src="img/service/3.png" alt="1">
-						<div class="serv_title">Creativity</div>
-						<div class="serv_text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-					</div>
-				
-				
-					<div class="services_item">
-						<img class="serv_icon" src="img/service/4.png" alt="1">
-						<div class="serv_title">seo</div>
-						<div class="serv_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-					</div>
-				</div>
-				<div class="services">
-					<div class="services_item line">
-						<img class="serv_icon" src="img/service/5.png" alt="1">
-						<div class="serv_title">Css/Html</div>
-						<div class="serv_text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</div>
-					</div>
-					<div class="services_item">
-						<img class="serv_icon" src="img/service/6.png" alt="1">
-						<div class="serv_title">digital</div>
-						<div class="serv_text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+			<div class="intro_slide">
+				<div class="container">
+					<div class="slide_inner">
+						<div class="slide_item active">
+							<b>01</b>
+							<span class="slider_info"><a href="#">Intro</a></span>
+						</div>
+						<div class="slide_item">
+							<b>02</b>
+							<span class="slider_info"><a href="#">Work</a></span>
+						</div>
+						<div class="slide_item">
+							<b>03</b>
+							<span class="slider_info"><a href="#">About</a></span>
+						</div>
+						<div class="slide_item">
+							<b>04</b>
+							<span class="slider_info"><a href="#">Contacts</a></span>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 
-	</section>
+		<section class="section">
+			<div class="container">
+				<div class="section_header">
+					<h3 class="section_hightitle">What we do</h3>
+					<h2 class="section_title">Story about us</h2>
+					<div>
+						<p class="section_par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+
+				</div>
+				<div class="section_about" id="about">
+					<div class="about_item">
+						<div class="about_img">
+							<img src="./img/section_about/icon1.jpg" alt="1">
+						</div>
+						<div class="about_text">Super team</div>
+					</div>
+					<div class="about_item">
+						<div class="about_img">
+							<img src="./img/section_about/icon2.jpg" alt="1">
+						</div>
+						<div class="about_text">Super team</div>
+					</div>
+					<div class="about_item">
+						<div class="about_img">
+							<img src="./img/section_about/icon3.jpg" alt="1">
+						</div>
+						<div class="about_text">Super team</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="digits">
+			<div class="container">
+				<div class="info">
+					<div class="dig_info">
+						<div class="count_info">43</div>
+						<div class="text_info">Web Design Projects</div>
+					</div>
+
+					<div class="dig_info">
+						<div class="count_info">123</div>
+						<div class="text_info">happy client</div>
+					</div>
+
+					<div class="dig_info">
+						<div class="count_info">15</div>
+						<div class="text_info">award winner</div>
+					</div>
+
+					<div class="dig_info">
+						<div class="count_info">99</div>
+						<div class="text_info">cup of coffee</div>
+					</div>
+
+					<div class="dig_info">
+						<div class="count_info">24</div>
+						<div class="text_info">members</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<section class="section" id="services">
+			<div class="container">
+				<div class="section_header serv">
+					<h3 class="section_hightitle">We work with</h3>
+					<h2 class="section_title">Amazing Services</h2>
+					<div class="main_services">
+						<div class="services">
+							<div class="services_item line">
+								<img class="serv_icon" src="img/service/1.png" alt="1">
+								<div class="serv_title">Photography</div>
+								<div class="serv_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+							</div>
+							<div class="services_item">
+								<img class="serv_icon" src="img/service/2.png" alt="1">
+								<div class="serv_title">Web Design</div>
+								<div class="serv_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+							</div>
+						</div>
+
+						<div class="services">
+							<div class="services_item line">
+								<img class="serv_icon" src="img/service/3.png" alt="1">
+								<div class="serv_title">Creativity</div>
+								<div class="serv_text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+							</div>
 
 
-	<section class="section this_design">
-		<div class="container">
-			<div class="section_header">
+							<div class="services_item">
+								<img class="serv_icon" src="img/service/4.png" alt="1">
+								<div class="serv_title">seo</div>
+								<div class="serv_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+							</div>
+						</div>
+						<div class="services">
+							<div class="services_item line">
+								<img class="serv_icon" src="img/service/5.png" alt="1">
+								<div class="serv_title">Css/Html</div>
+								<div class="serv_text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</div>
+							</div>
+							<div class="services_item">
+								<img class="serv_icon" src="img/service/6.png" alt="1">
+								<div class="serv_title">digital</div>
+								<div class="serv_text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+		<section class="section this_design">
+			<div class="class" logos_img" ">
+			<div class=" section_header">
 				<h3 class="section_hightitle">For all devices</h3>
 				<h2 class="section_title">Unique design</h2>
 			</div>
@@ -202,7 +205,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+	</div>
 
 	</section>
 
@@ -221,46 +224,49 @@
 					</div>
 					<div class="new_item">
 						<div class="accordion">
-							<div class="accordion_item active">
-								<div class="accordin_header">
+							<div class="accordion_item" id="accordion_item_a">
+								<div class="accordin_header" id="accordin_header_a">
 									<div class="accord_title">Photography
 										<div class="accord_icon">
 											<img src="img/new_service/2.png" alt="1">
 										</div>
-										<div class="arrow">
-											<img src="img/new_service/up.png" alt="1">
+										<div class="arrow" id="arrow_a">
+											<img class="arr_down" src="img/new_service/down.png" alt="1">
+											<img class="arr_up" src="img/new_service/up.png" alt="2">
 										</div>
 									</div>
 								</div>
-								<div class="accordion_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<div class="accordion_text" id="accordion_text_a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
 							</div>
-							<div class="accordion_item">
-								<div class="accordin_header">
+							<div class="accordion_item" id="accordion_item_b">
+								<div class="accordin_header" id="accordin_header_b">
 									<div class="accord_title">Creativity
 										<div class="accord_icon">
 											<img src="img/new_service/3.png" alt="1">
 										</div>
-										<div class="arrow">
-											<img src="img/new_service/down.png" alt="1">
+										<div class="arrow" id="arrow_b">
+											<img class="arr_down" src="img/new_service/down.png" alt="1">
+											<img class="arr_up" src="img/new_service/up.png" alt="2">
 										</div>
 									</div>
 								</div>
-								<div class="accordion_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<div class="accordion_text" id="accordion_text_b">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
 							</div>
-							<div class="accordion_item">
-								<div class="accordin_header">
+							<div class="accordion_item" id="accordion_item_c">
+								<div class="accordin_header" id="accordin_header_c">
 									<div class="accord_title">Web design
 										<div class="accord_icon">
 											<img src="img/new_service/4.png" alt="1">
 										</div>
-										<div class="arrow">
-											<img src="img/new_service/down.png" alt="1">
+										<div class="arrow" id="arrow_c">
+											<img class="arr_down" src="img/new_service/down.png" alt="1">
+											<img class="arr_up" src="img/new_service/up.png" alt="2">
 										</div>
 									</div>
 								</div>
-								<div class="accordion_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<div class="accordion_text" id="accordion_text_c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
 							</div>
 
@@ -278,6 +284,21 @@
 			<div class="words_item">
 
 				<div class="words">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					<div class="words_icon">
+						<img src="img/new_service/5.png" alt="1">
+					</div>
+					<a class="words_btn prev" href="#">
+						<img src="img/new_service/left.png" alt="1">
+					</a>
+					<a class="words_btn next" href="#">
+						<img src="img/new_service/right.png" alt="2">
+					</a>
+					<div class="words_autor">Jon Doe</div>
+				</div>
+			</div>
+			<div class="words_item">
+
+				<div class="words">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”
 					<div class="words_icon">
 						<img src="img/new_service/5.png" alt="1">
 					</div>
@@ -392,28 +413,28 @@
 		<div class="container">
 			<div class="inner_logo">
 				<div class="logos_item">
-					<img src="img/logo/1.png" alt="1">
+					<img class="logos_image" src="img/logo/1.png" alt="1">
 				</div>
 				<div class="logos_item">
-					<img src="img/logo/2.png" alt="1">
+					<img class="logos_image" src="img/logo/2.png" alt="1">
 				</div>
 				<div class="logos_item">
-					<img src="img/logo/3.png" alt="1">
+					<img class="logos_image" src="img/logo/3.png" alt="1">
 				</div>
 				<div class="logos_item">
-					<img src="img/logo/4.png" alt="1">
+					<img class="logos_image" src="img/logo/4.png" alt="1">
 				</div>
 				<div class="logos_item">
-					<img src="img/logo/5.png" alt="1">
+					<img class="logos_image" src="img/logo/5.png" alt="1">
 				</div>
 				<div class="logos_item">
-					<img src="img/logo/6.png" alt="1">
+					<img class="logos_image" src="img/logo/6.png" alt="1">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<section class="section work">
+	<section class="section work" id="work">
 		<div class="container">
 			<div class="section_header">
 				<h3 class="section_hightitle">What we do</h3>
@@ -471,14 +492,14 @@
 			</div>
 			<div class="work_column">
 				<div class="work_item">
-					<img class="work_img" src="img/our_work/3.png" alt="1">
+					<img class="work_img" src="img/our_work/6.png" alt="1">
 					<div class="work_info">
 						<div class="work_title">creatively designed</div>
 						<div class="work_text">Lorem ipsum dolor sit</div>
 					</div>
 				</div>
 				<div class="work_item">
-					<img class="work_img" src="img/our_work/4.png" alt="1">
+					<img class="work_img" src="img/our_work/7.png" alt="1">
 					<div class="work_info">
 						<div class="work_title">creatively designed</div>
 						<div class="work_text">Lorem ipsum dolor sit</div>
@@ -492,8 +513,22 @@
 	<div class="grey_space no_grey">
 		<div class="container">
 			<div class="words_item">
-
 				<div class="words">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					<div class="words_icon new_slide">
+						<img src="img/slide/1.png" alt="1">
+					</div>
+					<a class="words_btn prev" href="#">
+						<img src="img/slide/2.png" alt="1">
+					</a>
+					<a class="words_btn next" href="#">
+						<img src="img/slide/3.png" alt="2">
+					</a>
+					<div class="words_autor">Joshua Earle</div>
+				</div>
+			</div>
+
+			<div class="words_item">
+				<div class="words">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
 					<div class="words_icon new_slide">
 						<img src="img/slide/1.png" alt="1">
 					</div>
@@ -562,7 +597,7 @@
 		</div>
 	</section>
 
-	<section class="section">
+	<section class="section" id="blog">
 		<div class="container">
 			<div class="section_header">
 				<h3 class="section_hightitle">Our stories</h3>
@@ -662,7 +697,7 @@
 		</iframe>
 	</div>
 
-	<footer class="footer">
+	<footer class="footer" id="contact">
 		<div class="container">
 			<div class="footer_inner">
 				<div class="footer_column left">
@@ -758,12 +793,12 @@
 
 		</div>
 	</footer>
-	<div class="container">
+	<div class="foot_copy">
 		<div class="copyright">
 			© 2020 MoGo free PSD template by <span>Laaqiq</span>
 		</div>
 	</div>
-
+	</div>
 
 
 
