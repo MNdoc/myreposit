@@ -779,6 +779,11 @@ h6 {
 	right: 0%;
 }
 
+/* section who team */
+.section.who {
+	padding-bottom: 6.5rem;
+}
+
 /********************** Team section ************************/
 
 .section_team {
@@ -884,7 +889,7 @@ h6 {
 }
 
 .grey_space.logos {
-	margin-top: 7rem;
+	margin-top: 6.5rem;
 	margin-bottom: 0;
 }
 
@@ -1452,7 +1457,7 @@ i {
 	/*grey space */
 	.grey_space {
 		height: 12rem;
-		margin-bottom: 0;
+		margin-bottom: 2rem;
 	}
 
 	.words {
@@ -1524,10 +1529,11 @@ i {
 	.section {
 		padding-bottom: 3.5rem;
 	}
+
 	/* nav */
 	.nav_link {
-	margin-right: 0.65rem;
-}
+		margin-right: 0.65rem;
+	}
 
 	/* intro */
 
@@ -1556,6 +1562,11 @@ i {
 	.services_item {
 		border-bottom: 0.05rem solid #e5e5e5;
 		padding: 0.7rem 2rem 0.7rem 3rem;
+	}
+
+	/* section accordion */
+	.section.accord {
+		padding-bottom: 0.5rem;
 	}
 
 	/* section words space grey */
@@ -1590,6 +1601,12 @@ i {
 		top: -0.4rem;
 	}
 
+	/* section who */
+	.section.who {
+		padding-bottom: 4.5rem;
+		padding-top: 1.5rem;
+	}
+
 	/*social */
 	.social_item {
 		width: 2rem;
@@ -1605,7 +1622,7 @@ i {
 
 	/* logo */
 	.grey_space.logos {
-		margin-top: 3rem;
+		margin-top: 2.5rem;
 	}
 
 	/* work */
@@ -1636,9 +1653,6 @@ i {
 	}
 
 }
-
-
-
 
 @media (max-width: 780px) {
 	.section {
@@ -1786,6 +1800,11 @@ i {
 		left: 1.45rem;
 	}
 
+	/* section who */
+	.section.who {
+		padding-top: 1.25rem;
+	}
+
 	/*social */
 	.section_team {
 		margin-top: 2.5rem;
@@ -1810,6 +1829,7 @@ i {
 
 	.our_works {
 		flex-wrap: wrap;
+		margin-top: 3rem;
 	}
 
 	.work_column {
@@ -1868,6 +1888,11 @@ i {
 		margin: 0.2rem 0;
 	}
 
+	/* .grey space logos */
+
+	.grey_space.logos {
+		margin-top: 1.2rem;
+	}
 }
 
 
@@ -1960,6 +1985,7 @@ i {
 	/* section words space grey */
 	.grey_space {
 		height: 8rem;
+		margin-bottom: 0.5rem;
 	}
 
 	.words {
@@ -1986,6 +2012,11 @@ i {
 
 	.words_icon.new_slide {
 		top: 0.3rem;
+	}
+
+	/* section who */
+	.section.who {
+		padding-top: 1.2rem;
 	}
 
 	/* social */
@@ -2021,6 +2052,7 @@ i {
 	/* logo */
 	.grey_space.logos {
 		height: auto;
+		margin-top: 0.5rem;
 	}
 
 	.inner_logo {
@@ -2055,7 +2087,6 @@ i {
 		font-size: 0.7rem;
 	}
 
-	/* clients */
 	/* clients */
 	.clients_photo {
 		position: static;
