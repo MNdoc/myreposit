@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Vue todos</title>
+</head>
+
+<body>
+	<header>
+		<h1>Список дел</h1>
+	</header>
+
+	<div id="todos">
+		<div class="enter_words">
+			<input type="text" class="words" v-model="currentTask" placeholder="Введите вашу задачу" required>
+			<input class="get_years" id="date" type="date" v-model="curDate" required>
+			<input class="digit" type="time" v-model="curTime">
+			<button type="submit" @click="addTask" class="btn_add">Добавить</button>
+		</div>
+		<ul>
+			<li v-for="task in tasks" :class="{'this_complited': task.isComplited}">
+				<span>
+					<input class="check" type="checkbox" @click="task.isComplited=!task.isComplited">
+					<span>
+						<input class="input_change" type="text" v-if="task.isEdit" @blur="editTask(task.text)" @keyup.enter="editTask(task.text)" v-model="editVal">
+						{{task.text}}
+						<button class="btn_change" @click="changeEdit(task.text)">?</button></span>
+					<em>{{task.date_now}}</em>
+					<i class="space">{{task.time_now}}</i>
+					<i>{{task.time_add}}</i>
+					<button class="btn_close" @click="removeTask(task.text)">X</button>
+				</span>
+			</li>
+		</ul>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
